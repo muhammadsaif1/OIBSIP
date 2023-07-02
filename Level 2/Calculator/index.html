@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to my Calculator</h1>
+    <div id="main">
+      <form name="calc" action="">
+        <input placeholder="0" type="text" name="screen" id="calc_screen" />
+        <br />
+        <input
+          id="button"
+          class="number"
+          type="button"
+          value="7"
+          onclick="calc.screen.value+=7"
+        />
+        <input
+          id="button"
+          class="number"
+          type="button"
+          value="8"
+          onclick="calc.screen.value+=8"
+        />
+        <input
+          id="button"
+          class="number"
+          type="button"
+          value="9"
+          onclick="calc.screen.value+=9"
+        />
+        <input
+          id="button"
+          class="symbol"
+          type="button"
+          value="+"
+          onclick="add()"
+        />
+        <br />
+        <input
+          id="button"
+          class="number"
+          type="button"
+          value="4"
+          onclick="calc.screen.value+=4"
+        />
+        <input
+          id="button"
+          class="number"
+          type="button"
+          value="5"
+          onclick="calc.screen.value+=5"
+        />
+        <input
+          id="button"
+          class="number"
+          type="button"
+          value="6"
+          onclick="calc.screen.value+=6"
+        />
+        <input
+          id="button"
+          class="symbol"
+          type="button"
+          value="-"
+          onclick="sub()"
+        />
+        <br />
+        <input
+          id="button"
+          class="number"
+          type="button"
+          value="1"
+          onclick="calc.screen.value+=1"
+        />
+        <input
+          id="button"
+          class="number"
+          type="button"
+          value="2"
+          onclick="calc.screen.value+=2"
+        />
+        <input
+          id="button"
+          class="number"
+          type="button"
+          value="3"
+          onclick="calc.screen.value+=3"
+        />
+        <input
+          id="button"
+          class="symbol"
+          type="button"
+          value="/"
+          onclick="div()"
+        />
+        <br />
+        <input
+          id="button"
+          class="danger"
+          type="button"
+          value="c"
+          onclick="calc.screen.value=''"
+        />
+        <input
+          id="button"
+          class="number"
+          type="button"
+          value="0"
+          onclick="calc.screen.value+=0"
+        />
+        <input
+          id="button"
+          class="symbol"
+          type="button"
+          value="="
+          onclick="calc.screen.value=eval(calc.screen.value)"
+        />
+        <input
+          id="button"
+          class="symbol"
+          type="button"
+          value="x"
+          onclick="mul()"
+        />
+        <br />
+        <input
+          id="button"
+          class="bottom danger"
+          type="button"
+          value="DEL"
+          onclick="deleteLastInput()"
+        />
+        <input
+          class="symbol bottom"
+          type="button"
+          value="."
+          id="button"
+          onclick="calc.screen.value+='.'"
+        />
+        <input
+          class="bottom symbol"
+          id="button"
+          type="button"
+          value="√"
+          onclick="calculateSquareRoot()"
+        />
+
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
